@@ -1,13 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
+// import { StatusBar } from 'expo-status-bar';
 import { KeyboardAvoidingView, StyleSheet, Text, View, TextInput } from 'react-native';
 import Task from './components/Task';
+// import { styled } from "nativewind";
 
 export default function App() {
   return (
     <View style={styles.container}>
 
       {/* {today's task} */}
-      <View style={styles.tasksWrapper}>
+      <View className="flex-1 items-center justify-center">
         <Text style={styles.sectionTitle}>
           Today's Task
         </Text>
@@ -23,7 +24,7 @@ export default function App() {
       {/* {Write a task} */}
       <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? "padding" : "height"}
         style={styles.writeTaskWrapper}>
-        <TextInput style={styles.input} placeholder="Write a task"></TextInput>
+        <TextInput style={styles.input} placeholder="Write a task for "></TextInput>
         {/* <TouchableOpacity>
           <View style={styles.addWrapper}></View>
         </TouchableOpacity> */}
