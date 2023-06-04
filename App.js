@@ -25,7 +25,7 @@ export default function App() {
     <View style={styles.container}>
 
       {/* {today's task} */}
-      {/* className="flex-1 items-center justify-center" */}
+      {/* className="flex-1 items-center justify-center bg-black" */}
       <View>
         <Text style={styles.sectionTitle}>
           Today's Task
