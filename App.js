@@ -42,6 +42,8 @@ export default function App() {
           {/* <Task text={'Text 1'} />
           <Task text={'Text 2'} /> */}
 
+            <Task text={'Text 2'} /> 
+
         </View>
       </View>
 
